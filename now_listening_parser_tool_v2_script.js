@@ -81,13 +81,13 @@
         title = $('title');
 
         
-        // Sets updated title every ~1000ms.
+        // Sets updated title every ~5000ms.
         //--------------------
         (function runTimer() {
             setTimeout(function () {
                 setTitle();
                 runTimer();
-            }, 1000);
+            }, 5000);
         })();
     }
 
